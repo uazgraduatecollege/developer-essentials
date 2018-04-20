@@ -1,0 +1,2 @@
+# Suppress gvim gtk+ error output
+alias gvim="gvim 2>/dev/null"

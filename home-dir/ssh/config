@@ -1,0 +1,6 @@
+#
+# Global
+#
+Host *
+   TCPKeepAlive yes
+   ServerAliveInterval 180

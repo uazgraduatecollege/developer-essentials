@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+let theString = process.argv[2]
+
+if (theString !== undefined) {
+  console.log(encodeURIComponent(theString))
+} else {
+  console.log('No input was provided')
+}
