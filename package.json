@@ -1,0 +1,26 @@
+{
+  "name": "developer-essentials",
+  "version": "0.1.0",
+  "description": "University of Arizona Graduate College Developer Essentials",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node_modules/docsify-cli/bin/docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.com/uazgraduatecollege/developer-essentials"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.com/uazgraduatecollege/developer-essentials/issues"
+  },
+  "homepage": "https://bitbucket.com/uazgraduatecollege/developer-essentials/#readme",
+  "dependencies": {
+    "docsify-cli": "^4.1.9"
+  }
+}

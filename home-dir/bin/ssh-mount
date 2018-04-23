@@ -1,0 +1,119 @@
+#!/usr/bin/env bash
+
+# Script:        ssh-mount
+# Purpose:       Mount remote SSH locations using sshfs
+# Author:        Patrick Barabe <pbarabe@email.arizona.edu>
+# Updated:       6 Jan 2015
+# Copyright:     (c) 2013 Arizona Board of Regents
+# Dependencies:  Requires sshfs
+
+###
+### BEGIN CONFIG: Edit these variables to suit your needs:
+TARGET_DIR="/opt"               # Default directory on remote hosts to mount
+MY_HOSTS=(host1 host2 host3)    # List of valid hosts to mount
+LOCAL_MNT_ROOT="~/mnt"          # Local machine root mount point (parent dir)
+### END CONFIG
+###
+
+################## MAIN SCRIPT - DO NOT EDIT BELOW THIS LINE ##################
+TARGET_HOST=""
+
+function mount_it {
+    if [ ! -d "${LOCAL_MNT_ROOT}/${TARGET_HOST}" ]; then
+        echo "Local mount point \"${LOCAL_MNT_ROOT}/${TARGET_HOST}\" does not exist. Please create directory and try again."
+        exit 1
+    fi
+
+    sshfs "${TARGET_HOST}:${TARGET_DIR}" "${LOCAL_MNT_ROOT}/${TARGET_HOST}" -o reconnect,idmap=user
+    if [ $? -eq 0 ]; then
+        echo "Mounted ${TARGET_HOST}:${TARGET_DIR}" on "${LOCAL_MNT_ROOT}/${TARGET_HOST}"
+        exit 0
+    fi
+
+    echo "Could not mount ${TARGET_HOST}:${TARGET_DIR}" on "${LOCAL_MNT_ROOT}/${TARGET_HOST}"
+    exit 1
+}
+
+function umount_it {
+    fusermount -u "${LOCAL_MNT_ROOT}/${TARGET_HOST}"
+    if [ $? -eq 0 ]; then
+        echo "Unmounted ${LOCAL_MNT_ROOT}/${TARGET_HOST}"
+        exit 0
+    fi
+
+    exit 1
+}
+
+function list_mounts {
+    mount | grep sshfs
+    exit 0
+}
+
+function show_help {
+    echo ""
+    echo "sshmount - Mount remote SSH locations using sshfs"
+    echo ""
+    echo "Usage:"
+    echo "   sshmount <host_name> [-d <remote_dirname>]"
+    echo "   sshmount -u <host_name>"
+    echo "   sshmount -l"
+    echo "   sshmount -h"
+    echo ""
+    echo "   host_name        Mount the target indicated by host_name"
+    echo "   remote_dirname   The remote directory to mount. Defaults to ${TARGET_DIR}"
+    echo "   -u host_name     Unmount the target indicated by host_name"
+    echo "   -l               List mounted sshfs filesystems"
+    echo "   -h               Display this help text"
+    echo ""
+    echo "Pre-requisites:"
+    echo "   - SSH server running on remote host and accessible from local host"
+    echo "   - sshfs installed on local host"
+    echo ""
+    echo "Configuration options:"
+    echo "   Edit this script to update MY_HOSTS, TARGET_DIR, and LOCAL_MNT_ROOT as needed."
+    echo "   Space-delimited items in MY_HOSTS can be any of:"
+    echo "    - Complete IP addresses: 150.135.155.155"
+    echo "    - Complete DNS names: myhost1.mydomain.arizona.edu"
+    echo "    - Host aliases from your personal \$HOME/.ssh/config file: myhost1"
+    echo ""
+    exit 0
+}
+
+if [ $# -eq 0 ]; then
+    list_mounts
+fi
+
+while [ $# -gt 0 ]
+do
+    if [ $1 = -h ]; then
+        show_help
+    fi
+
+    if [ $1 = -l ]; then
+        list_mounts
+    fi
+
+    if [ $1 = -u ]; then
+        TARGET_HOST=$2
+        umount_it
+    fi
+
+    if [ $1 = -d ]; then
+        TARGET_DIR=$2
+    fi
+
+    for item in ${MY_HOSTS[@]}; do
+        if [ $1 = $item ]; then
+            TARGET_HOST=$1
+        fi
+    done
+
+    shift
+done
+
+if [[ $TARGET_HOST ]]; then
+    mount_it
+fi
+
+echo "Unknown target"
+exit 1
