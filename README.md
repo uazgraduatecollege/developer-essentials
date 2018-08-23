@@ -6,8 +6,8 @@ This project is meant to help both new team members and those new to Linux to un
 
 ## Getting Started
 
-1. Create a BitBucket account (please use your UA email address)
-2. Let an administrator know your account username so we can add you to the team
+1. Create a BitBucket account and/or a GitHub account (please use your UA email address)
+2. Let an administrator know your account username(s) so we can add you to the team accounts
 3. Fork this repository
 4. Clone it to your desktop computer:
   - `cd Documents`

@@ -36,3 +36,9 @@ Version control is a foundation of modern development teams. It benefits a team 
 * Drupal 7.x Modules, Features, and Themes: Drupal up to version 7.x uses it's own version tag rubric. Eg. A module's release version might be something like `7.x-1.3` (rather than `1.3.0`).
 * Drupal Features: This is generated code. We will not follow the tagging procedure here. This standard must be followed in all other respects.
 * Things deployed on a local file system with no access to version control don’t need a tag.
+
+## Other References
+
+[We use Git](git/home.md) to handle code revisioning and versioning.
+
+In order to maintain backwards compatibility with client utilities, we also [version all API URLs](best-practices/version-api-urls.md).
