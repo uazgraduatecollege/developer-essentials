@@ -1,4 +1,4 @@
-# We're Use Git!
+# We're Using Git!
 
 And we'll be using it more and more.
 
