@@ -5,6 +5,7 @@ Development best practices for the University of Arizona Graduate College Web De
 ## Contents
 
   - [Version all code](best-practices/version-all-code.md)
+  - [Version API URLs](best-practices/version-api-urls.md)
   - [CSS](best-practices/css.md)
   - [HTML](best-practices/html.md)
   - [JavaScript](best-practices/javascript.md)
