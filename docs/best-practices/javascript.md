@@ -1,29 +1,25 @@
 # Best Practice: JavaScript
 
-JavaScript is an interpreted, functional programming language. It was given the unfortunate name “JavaScript” as a ploy to make it more popular in the ‘90’s when the browser wars were starting to escalate. It does not use any Java functionality. We will alternately refer to its standardized name, “ECMAscript”. JavaScript is used mostly as an asynchronous language *on the client side*. It is, however, gaining popularity as a server-side, object oriented language (see Node.js). For our purposes, these best practices will apply to client-side usage. Also, take a look at http://jstherightway.org/.
+JavaScript is an interpreted, functional programming language. It was given the unfortunate name _JavaScript_ as a ploy to make it more popular in the 90s when the browser wars were starting to escalate. It does not use any Java functionality. We will alternately refer to it as _JS_ or by its standardized name, _ECMAscript_. We used JavaScript for both client- and server-side development.
 
 ## Specific Standards
 
-* Avoid globally declared variables like the plague. Use of a [module pattern ](http://christianheilmann.com/2007/08/22/again-with-the-module-pattern-reveal-something-to-the-world/) or [IIFE pattern](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) will simplify code and encapsulate variables.
+* We are embracing [StandardJS](https://standardjs.com/) as our preferred style.
+* We prefer the use of `let` and `const` instead of `var`, [whenever possible](https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f).
 * If a block of code isn’t easily readable, comment it with C comment syntax: `/* .. */`.
-* Use notation shortcuts when possible, but don’t obfuscate the rationale behind the code.
-* Cache variables whenever possible to avoid over-taxing resources. This is best for optimizing loops.
-* Don’t append the DOM in a loop.
 * Use exception handling for run-time errors. Remember, syntax errors will stop page loading, but run-time errors may be silent. Let’s do our part to catch them!
-* We want to “use strict” (directive) with our scopes, either defined by function, or globally. This helps prevent errors.
-* Avoid using browser specific code (like “sniffers”). Many other JS libraries have up-to-date code to handle old, unsupported browsers. See jQuery and modernizr below.
+* We want to `use strict` (directive) with our scopes, either defined by function, or globally. This helps prevent errors.
+* Avoid using browser specific code (like _sniffers_). Many JS libraries have up-to-date code to handle old, unsupported browsers. See jQuery and modernizr below.
 * Styles should be kept in the CSS.
 
-## Frameworks and libraries we or our vendors use:
+## Frameworks and Libraries We Use or Are Beginning to Use
 
-* http://jquery.com
-* https://modernizr.com
-* https://angularjs.org
-* http://backbonejs.org
-* http://underscorejs.org
-* http://parsleyjs.org and http://garlicjs.org
-* https://nodejs.org/en/
-* http://expressjs.com
+* [jQuery](https://jquery.com/)
+* [Modernizr](https://modernizr.com/)
+* [NodeJS](https://nodejs.org/)
+* [Express](https://expressjs.com/)
+* [Vue.js](https://vuejs.org/)
+* [GatsbyJS](https://www.gatsbyjs.org/)
 
 ## Rationale
 We want to create code that is high quality (see “Good Enough for Everyone” best practice), and easy to maintain and work on collaboratively.
