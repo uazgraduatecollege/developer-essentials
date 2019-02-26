@@ -2,33 +2,31 @@
 
 ## Description
 
-Developer-facing documentation is essential for communicating information about how to begin development on a new project, or how a project is designed to be configured and used. This best practice is designed to be a guide for repository-level documentation, i.e., the documentation which would live on the filesystem in the project's source control repository.
+Developer-facing documentation is essential for communicating information about how to begin development on a new project, or how a project is designed to be configured and used.
+This best practice is designed to be a guide for repository-level documentation, i.e., the documentation which would live on the filesystem in the project's source control repository.
 
 ## Specific Standards
 
 ### README
 
-There must be a README in the project's root directory. See this repository's `examples/README.md` file for suggested content.
+There must be a README in the project's root directory. See this repository's [examples/README.md](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/README.md) file for suggested content.
 
 ### LICENSE
 
-Add a `LICENSE` file. Until we have a licensing best practice, here's the default, closed-source license.
-More open licensing (i.e. MIT) is permitted.
+Add a `LICENSE` file. Most Grad IT projects will belong to ABOR so use the following (be sure to update the year as needed):
 
 ```txt
-Copyright (C) The Arizona Board of Regents on Behalf of the University of Arizona - All Rights Reserved
+Copyright (c) 2019 The Arizona Board of Regents on behalf of the University of Arizona - All Rights Reserved.
 ```
 
 ### Editorconfig
 
-Add an `.editorconfig` file. In most cases, you can use the `examples/.editorconfig` file or [this snippet](https://bitbucket.org/snippets/uazgraduatecollege/Le4Mgo/editorconfig)
+Add an `.editorconfig` file. In most cases, you can use the [https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.editorconfig] file.
 
 ### Comments
 
 Use comments in your code. When possible, refer to your language-specific best practices (like PHPdoc, JavaDoc, for example).
 Make it easy for the next person (which might be you) to understand what's going on.
-
-Generally helpful tips: https://msdn.microsoft.com/en-us/library/aa260844(v=vs.60).aspx#cfr_comments
 
 ### Markdown
 
