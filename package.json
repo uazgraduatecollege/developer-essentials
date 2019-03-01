@@ -21,6 +21,6 @@
   },
   "homepage": "https://bitbucket.com/uazgraduatecollege/developer-essentials/#readme",
   "dependencies": {
-    "docsify-cli": "^4.1.9"
+    "docsify-cli": "^4.3.0"
   }
 }
