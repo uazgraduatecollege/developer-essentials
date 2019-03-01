@@ -32,6 +32,22 @@ Make it easy for the next person (which might be you) to understand what's going
 
 [Markdown](http://commonmark.org) is the preferred format for documentation.
 
+### Issues
+
+Whichever git repository host is being used, we typically will use an issue tracker for documenting bugs and enhancement features. In many cases, it will be helpful to describe the issue using a template, and in fact GitHub and GitLab can even make use of issue templates that are included in the repository. Issues can be adapted from the templates in whatever way is suitable - eg. our enhancement feature template includes a section for proposed SQL changes, which can be removed entirely if not relevent.
+
+Current templates are in this repositories `examples` folder:
+
+`examples`
+  - .github\ISSUE_TEMPLATES
+    - [bug_report.md](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.github/ISSUE_TEMPLATES/bug_report.md)
+    - [feature_request.md](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.github/ISSUE_TEMPLATES/feature_request.md)
+  - .gitlab
+    - [Bug.md](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.gitlab/Bug.md)
+    - [Enhancement.md](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.gitlab/Enhancement.md)
+
+For projects hosted primarily in BitBucket, any of these templates may be copied and pasted - or merely used as a guideline - when creating new issues.
+
 ### Additional documentation
 
 Additional documentation should be located in `./docs`.
