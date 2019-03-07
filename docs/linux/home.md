@@ -46,3 +46,8 @@ Spend a little with these tools to get familiar with the launching the Terminal 
 - `mkdir dirname` - Make a directory called _dirname_
 - `cd dirname` - _Change Directory_, ie. switch to a different directory
 - `touch filename` - Create an empty file called _filename_ (if it doesn't exist). Or change the timestamp of an existing file called _filename_
+
+- General  
+- `history` - Show the command line history.  Show the list of commands previously used.
+- `man` - The man or help pages.  Example: man ls will display the help text for the ls command.  
+
