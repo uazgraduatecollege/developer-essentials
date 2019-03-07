@@ -72,6 +72,15 @@ Eg.
 * [Testing Framework](#) - The testing framework used
 * etc
 
+## Resources (optional)
+
+I like to store references to things like websites that help me figure out how to do something.  
+Sites can be saved in the web browser bookmarks, however saving them here helps provide context.  
+
+Examples:  
+[Google Search for php recursion](https://www.google.com/search?q=php+recursion&btnK=Google+Search&oq=php+recursion)   
+[CakePHP 2 Utilities](https://book.cakephp.org/2.0/en/core-libraries/toc-utilities.html)  
+ 
 ## Contributing
 
 Explain how contributions to this project are expected to be made. Eg.  
