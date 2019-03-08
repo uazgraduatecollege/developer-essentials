@@ -36,7 +36,7 @@ Make it easy for the next person (which might be you) to understand what's going
 
 Whichever git repository host is being used, we typically will use an issue tracker for documenting bugs and enhancement features. In many cases, it will be helpful to describe the issue using a template, and in fact GitHub and GitLab can even make use of issue templates that are included in the repository. Issues can be adapted from the templates in whatever way is suitable - eg. our enhancement feature template includes a section for proposed SQL changes, which can be removed entirely if not relevent.
 
-Current templates are in this repositories `examples` folder:
+Current templates are in this repository's `examples` folder:
 
 `examples`
   - .github\ISSUE_TEMPLATES
