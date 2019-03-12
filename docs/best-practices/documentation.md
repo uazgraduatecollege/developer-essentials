@@ -67,7 +67,7 @@ Additional documentation should be located in `./docs/`.
 
 ### Features
 
-We're starting to use Gherkin for describing user-facing functionality, and have learning about best practices from a couple of resources:
+We're starting to use Gherkin for describing user-facing functionality, and we're learning about best practices from a couple of resources:
 
  - [BDD 101: Writing Good Gherkin](https://automationpanda.com/2017/01/30/bdd-101-writing-good-gherkin/)
  - [Behat: Writing Features](http://docs.behat.org/en/v2.5/guides/1.gherkin.html)
