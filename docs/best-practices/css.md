@@ -1,6 +1,7 @@
 # Best Practice: CSS
 
-Description
+## Description
+
 CSS, along with JavaScript and HTML, is a fundamental language of the web responsible for the presentation of websites. By presentation we mean everything from layout and positioning of elements to typography, colors, borders and backgrounds. Anything that changes the presentation of web content is (or should be) controlled with CSS.
 
 ## Specific Standards
@@ -149,9 +150,3 @@ Test on touch devices, too. If you don't have one handy, use Browserstack (find 
 
 3rd party code that is hard to touch, legacy projects that are near end of life.
 
-## History
-
-* 2014 October 16: Ratified
-* 2015 January 26: Ginger added that we use a space before the opening bracket.
-* 2015 June 24: Ginger added the browser support policy.
-* 2016 October 12: Mike changed some formatting. Ginger added a linting example. Mike added the indentation standard. Mike and Ginger used Analytics to update the browser support policy.
