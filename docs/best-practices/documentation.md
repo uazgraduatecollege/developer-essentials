@@ -32,8 +32,10 @@ Copyright (c) 2019 The Arizona Board of Regents on behalf of the University of A
 
 #### Editorconfig
 
-Add an `.editorconfig` file.
-In most cases, you can use the [examples/.editorconfig](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.editorconfig) file.
+Add an `.editorconfig` file. This will help standardize your coding style across editors and environments.
+In most cases, you can use this repository's [examples/.editorconfig](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.editorconfig) file.
+
+Visit [Editorconfig](https://editorconfig.org/) for a more complete introduction to what `.editconfig` can do for you.
 
 ### Comments
 
