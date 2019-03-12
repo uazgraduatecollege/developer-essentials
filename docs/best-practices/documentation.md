@@ -5,7 +5,12 @@
 Developer-facing documentation is essential for communicating information about how to begin development on a new project, or how a project is designed to be configured and used.
 This best practice is designed to be a guide for repository-level documentation, i.e., the documentation which would live on the filesystem in the project's source control repository.
 
-Documentation preserves developer knowledge and reduces waste. It gives a developers a place to explain how to use their project to other developers and it helps new developers get up and running quickly. In a well-documented project, you can stand on the shoulders of the other developers.
+
+## Rationale
+
+Documentation preserves developer knowledge and reduces waste.
+It gives a developers a place to explain how to use their project to other developers and it helps new developers get up and running quickly.
+In a well-documented project, you can stand on the shoulders of the other developers.
 
 ## Specifics
 
