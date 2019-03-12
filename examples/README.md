@@ -5,7 +5,7 @@ Brief description
 
 ## Getting Started
 
-Provide instructions that will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Provide instructions that will get a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
