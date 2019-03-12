@@ -9,7 +9,7 @@ This best practice is designed to be a guide for repository-level documentation,
 ## Rationale
 
 Documentation preserves developer knowledge and reduces waste.
-It gives a developers a place to explain how to use their project to other developers and it helps new developers get up and running quickly.
+It gives a developer a place to explain how to use their project to other developers and it helps new developers get up and running quickly.
 In a well-documented project, you can stand on the shoulders of the other developers.
 
 ## Specifics
