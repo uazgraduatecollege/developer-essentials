@@ -5,11 +5,11 @@ Brief description
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Provide instructions that will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Describe the things you need to install the software and how to install them.
 
 ```
 Give examples
@@ -17,7 +17,7 @@ Give examples
 
 ### Installation
 
-A step by step series of examples that tell you how to get a development env running.
+Provide a step by step series of examples that tell you how to get a development env running, eg.
 
 Say what the step will be.
 
@@ -65,6 +65,14 @@ Give an example
 
 Add additional notes about how to deploy this on a live system.
 
+## Documentation
+
+Explain where to find documentation for the project.
+In most cases, documentation should be either in the repository's `./docs/` directory or in a separate repository, eg.
+
+ - `./docs/` or
+ - `https://doma.in/team/project/documentation.git`
+
 ## Built With
 
 Eg.
@@ -72,18 +80,9 @@ Eg.
 * [Testing Framework](#) - The testing framework used
 * etc
 
-## Resources (optional)
-
-I like to store references to things like websites that help me figure out how to do something.  
-Sites can be saved in the web browser bookmarks, however saving them here helps provide context.  
-
-Examples:  
-[Google Search for php recursion](https://www.google.com/search?q=php+recursion&btnK=Google+Search&oq=php+recursion)   
-[CakePHP 2 Utilities](https://book.cakephp.org/2.0/en/core-libraries/toc-utilities.html)  
- 
 ## Contributing
 
-Explain how contributions to this project are expected to be made. Eg.  
+Explain how contributions to this project are expected to be made, eg.
 
 We use a git forking workflow to contribute changes via pull/merge requests.
 
@@ -96,3 +95,15 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 Most Grad IT projects will belong to ABOR, so use the following (be sure to update the year as needed):
 
 Copyright (c) 2019 Arizona Board of Regents on behalf of the University of Arizona - All Rights Reserved.
+
+## Resources (optional)
+
+Resources can include things like websites that help to figure out how to do something.
+Sites can be saved in the web browser bookmarks, however saving them here helps provide context.
+This should be use sparingly, however, and should not duplicate links listed under the **Prerequisites** or **Build With** sections.
+
+Examples:
+
+ - [Google Search for php recursion](https://www.google.com/search?q=php+recursion&btnK=Google+Search&oq=php+recursion)   
+ - [CakePHP 2 Utilities](https://book.cakephp.org/2.0/en/core-libraries/toc-utilities.html)  
+ 
