@@ -98,7 +98,7 @@ Copyright (c) 2019 Arizona Board of Regents on behalf of the University of Arizo
 
 ## Resources (optional)
 
-Resources can include things like websites that help to figure out how to do something.
+Resources can include things like websites that help you figure out how to do something.
 Sites can be saved in the web browser bookmarks, however saving them here helps provide context.
 This should be use sparingly, however, and should not duplicate links listed under the **Prerequisites** or **Build With** sections.
 
