@@ -12,6 +12,7 @@ Documentation preserves developer knowledge and reduces waste.
 It gives a developer a place to explain how to use their project to other developers and it helps new developers get up and running quickly.
 In a well-documented project, you can stand on the shoulders of the other developers.
 
+
 ## Specifics
 
 ### Git Repository Contents
@@ -27,7 +28,7 @@ Add a `LICENSE` file.
 Most Grad IT projects will belong to ABOR so use the following (be sure to update the year as needed):
 
 ```txt
-Copyright (c) 2019 The Arizona Board of Regents on behalf of the University of Arizona - All Rights Reserved.
+Copyright (c) 2020 The Arizona Board of Regents on behalf of the University of Arizona - All Rights Reserved.
 ```
 
 #### Editorconfig
@@ -36,6 +37,24 @@ Add an `.editorconfig` file. This will help standardize your coding style across
 In most cases, you can use this repository's [examples/.editorconfig](https://github.com/uazgraduatecollege/developer-essentials/blob/master/examples/.editorconfig) file.
 
 Visit [Editorconfig](https://editorconfig.org/) for a more complete introduction to what `.editconfig` can do for you.
+
+#### Gitignore
+
+Nearly every repository should have a `.gitignore` file that should ignore any files in the project that should not be added to version control (like configuration or log files).
+We have adopted the convention of using files that start with `scratch.` as temporary files for taking notes that don't need to be versioned.
+
+A very basic `.gitignore` file might look like this:
+```.gitignore
+# gradcoll temp files
+scratch.*
+
+# vim's swap files
+*.swp
+*.swo
+
+# npm dependencies
+/node_modules
+```
 
 ### Comments
 
@@ -91,5 +110,3 @@ See this repository's `docs/index.html` for a usage example.
 
 Features or other documentation may be kept in a separate repository, especially in the case of projects that span multiple repositories.
 In such cases, the location of the documentation should be referenced in the README.md.
-
-
