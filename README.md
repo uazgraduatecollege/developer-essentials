@@ -73,8 +73,9 @@ Start with the [README](docs/README.md) file in the docs directory
 
 You can even browse these docs with [Docsify](https://docsify.js.org/#/):
 
-1. Run `npm install && npm run serve`
-2. Visit http://localhost:3000 in your web browser
+1. Install docsify: `npm install --global docsify-cli`
+1. Run `npm run serve`
+2. Visit http://localhost:3000 in your web browser (or whichever URL is reported)
 
 (If that doesn't make sense to you, don't worry, just start with the README.)
 
