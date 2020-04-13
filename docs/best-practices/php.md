@@ -9,7 +9,7 @@
 * Whenever possible, develop applications according to object-oriented principles, taking advantage of the object-oriented programming constructs in PHP.
 * The principles, not the forms, of OOP are important. For example, “an object should avoid invoking methods of a member object returned by another method.” - [Law of Demeter](https://en.wikipedia.org/wiki/Law_of_Demeter)
 * Use PHP 5.3 and up.
-* New applications must follow [PSR-2](http://www.php-fig.org/psr/psr-2/), unless they use a framework or CMS that has its own coding standards (e.g., [Drupal](https://www.drupal.org/docs/develop/standards)).
+* New applications must follow [PSR-12](http://www.php-fig.org/psr/psr-12/), unless they use a framework or CMS that has its own coding standards (e.g., [Drupal](https://www.drupal.org/docs/develop/standards)).
 * Commenting is strongly encouraged. If the code would be hard to explain verbally - comment it.
 * “When in Rome”: follow the standards of the framework you’re working with.
 * Use of any tools recommended by [phptherightway.com](http://www.phptherightway.com) is encouraged.
