@@ -11,7 +11,7 @@ This project is meant to help both new team members and those new to Linux to un
 3. Fork this repository
 4. Clone it to your desktop computer:
   - `cd Documents`
-  - `git clone git@bitbucket.org:yourusername/developer-essentials.git`
+  - `git clone git@github.com:yourusername/developer-essentials.git`
 5. Read the docs
 6. _Optional_: Use the `home-dir` template by creating a series of symlinks:
 
