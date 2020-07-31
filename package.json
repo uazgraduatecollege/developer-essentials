@@ -12,13 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.com/uazgraduatecollege/developer-essentials"
+    "url": "git+https://github.com/uazgraduatecollege/developer-essentials"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://bitbucket.com/uazgraduatecollege/developer-essentials/issues"
+    "url": "https://gighub.com/uazgraduatecollege/developer-essentials/issues"
   },
-  "homepage": "https://bitbucket.com/uazgraduatecollege/developer-essentials/#readme",
-  "dependencies": {}
+  "homepage": "https://gighub.com/uazgraduatecollege/developer-essentials/#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "docsify": "^4.11.4"
+  }
 }
