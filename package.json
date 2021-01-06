@@ -15,13 +15,11 @@
     "url": "git+https://github.com/uazgraduatecollege/developer-essentials"
   },
   "author": "",
-  "license": "MIT",
+  "license": "See license in file LICENSE",
   "bugs": {
     "url": "https://gighub.com/uazgraduatecollege/developer-essentials/issues"
   },
   "homepage": "https://gighub.com/uazgraduatecollege/developer-essentials/#readme",
   "dependencies": {},
-  "devDependencies": {
-    "docsify": "^4.11.4"
-  }
+  "devDependencies": {}
 }
