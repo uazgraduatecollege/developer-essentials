@@ -26,29 +26,30 @@ $ ln -s ~/.home-dir/sh/aliases ~/.bash_aliases
 
 Since we do mostly software development, let's get setup with a few essential tools.
 
-### NodeJS
+### Node.JS
 
-NodeJS is a server-side Javascript engine that has become popular for web development in recent years.
-For a developer workstation, I recommend installing NodeJS by doing the following:
+Node.JS is a popular server-side Javascript engine.
+For a developer workstation, we recommend installing Node.JS using the Node Version Manager (NVM).
 
- 1. Download the most recent [LTS release of NodeJS](https://nodejs.org/en/) into your `~/bin/` directory.
- 2. From the command-line `cd` into your `bin` directory & extract the archive: `tar -xvf <filename>.tgz`. This will create a new folder named something like `node-v8.9.1-linux-x64`.
- 3. Create a symlink to this folder to make future updates easier: `ln -s node-v8.9.1-linux-x64 nodejs`
- 4. Create symlinks to the executable commands `ln -s nodejs/bin/node`, `ln -s nodejs/bin/npm`
+1. Follow the instructions to [install NVM](https://github.com/nvm-sh/nvm#installing-and-updating).  
+   You can verify your installation at the command-line: `$ nvm --version`
 
- Now you can execute the `node` and `npm` commands from anywhere (because your homedir's `bin` directory is part of your PATH environment variable).
+2. Use nvm to install and use the current Long-Term Service release of Node JS and npm:  
+   `$ nvm install --lts && nvm use --lts`
+
+You should now be able to execute the `node` and `npm` commands from anywhere:
 
 ```bash
 $ node --version
-v8.9.1
+v16.16.0
 
 $ npm --version
-5.5.1
+8.11.0
 ```
 
 ### PHP
 
-PHP is an older, tried-and-true scripting language commonly used for web development.
+PHP is a tried-and-true scripting language commonly used for web development.
 PHP can easily be installed from Ubuntu's package manager:
 
 `sudo apt update && sudo apt install php-cli`
